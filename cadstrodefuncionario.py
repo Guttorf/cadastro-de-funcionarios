@@ -1,8 +1,5 @@
 import json
 import os 
-import tkinter as tk
-from tkinter import messagebox, simpledialog
-
 
 ARQUIVO = 'funcionarios.json'
 
@@ -152,21 +149,6 @@ def menu():
 if __name__ == "__main__":
      menu()
 
-
-
-funcionarios = carregar_funcionarios()
-
-root = tk.Tk()
-root.title("Sistema de Funcionários")
-
-tk.Button(root, text="Adicionar Funcionário", width=25, command=adicionar_funcionario).pack(pady=5)
-tk.Button(root, text="Listar Funcionários", width=25, command=listar_funcionarios).pack(pady=5)
-tk.Button(root, text="Buscar Funcionário", width=25, command=buscar_funcionario).pack(pady=5)
-tk.Button(root, text="Atualizar Funcionário", width=25, command=atualizar_funcionario).pack(pady=5)
-tk.Button(root, text="Remover Funcionário", width=25, command=remover_funcionario).pack(pady=5)
-tk.Button(root, text="Sair", width=25, command=root.quit).pack(pady=10)
-
-root.mainloop()
 
                     
 
